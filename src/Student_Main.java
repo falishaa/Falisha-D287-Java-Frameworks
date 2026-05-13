@@ -14,7 +14,7 @@ public class Student_Main{
         //add() method
         for(String studentData : students){ //loop thru all students in array
             String[] parts = studentData.split(",");
-            //add
+            //add to array
             classRoster.add(parts[0], parts[1], parts[2], parts[3], Integer.parseInt(parts[4]), Integer.parseInt(parts[5]), Integer.parseInt(parts[6]), Integer.parseInt(parts[7]));
         }
 
