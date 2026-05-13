@@ -11,9 +11,10 @@ public class Student_Main{
         Student_Roster classRoster = new Student_Roster();
 
         //run methods
+        //add() method
         for(String studentData : students){ //loop thru all students in array
             String[] parts = studentData.split(",");
-            //add() method
+            //add
             classRoster.add(parts[0], parts[1], parts[2], parts[3], Integer.parseInt(parts[4]), Integer.parseInt(parts[5]), Integer.parseInt(parts[6]), Integer.parseInt(parts[7]));
         }
 
@@ -32,9 +33,18 @@ public class Student_Main{
         //print_average_grade() method
         System.out.println("Displaying average grades:");
 
-        for(Student student : classRoster.clas){
-
+        for(Student student : classRoster.classRosterList){
+            classRoster.print_average_grade(student.getStudentID());
         }
+
+        System.out.println();
+
+        //remove() methods
+        System.out.println("Removing Student 3:");
+        classRoster.remove("3");
+
+        System.out.println("Removing Student 3 again:");
+        classRoster.remove("3");
         
         
     }

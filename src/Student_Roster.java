@@ -35,7 +35,7 @@ public void print_average_grade(String studentID){
 
         int avg = (grades[0] + grades[1] + grades[2]) / 3;
 
-        System.out.println("Student ID: " + getStudentID)
+        System.out.println("Student ID: " + studentID + ", Average Grade: " + avg);
     }
 }
 
