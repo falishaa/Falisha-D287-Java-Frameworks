@@ -61,12 +61,13 @@ public void setAge(int age){
 //print method
 public void print(){
     System.out.print(studentID + "\t");
-    System.out.print("First Name: " + firstName + "\t");
-    System.out.print("Last Name: " + lastName + "\t");
-    System.out.print("Age: " + age + "\t");
+    System.out.print("First Name: " + getFirstName() + "\t");
+    System.out.print("Last Name: " + getLastName() + "\t");
+    System.out.print("Email: " + getEmail() + "\t");
+    System.out.print("Age: " + getAge() + "\t");
     System.out.print("Grades: ");
 
-    for(int grade : grades){
+    for(int grade : getGrades()){
         System.out.print(grade + " ");
     }
 
