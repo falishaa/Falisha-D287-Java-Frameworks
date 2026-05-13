@@ -32,8 +32,8 @@ public class Student_Main{
         //print_average_grade() method
         System.out.println("Displaying average grades:");
 
-        for(){
-            
+        for(Student student : classRoster.clas){
+
         }
         
         
