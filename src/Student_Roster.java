@@ -30,9 +30,21 @@ public void print_all(){
 }
 
 public void print_average_grade(String studentID){
+    for(Student student : classRosterList){
+        int[] grades = student.getGrades();
 
+        int avg = (grades[0] + grades[1] + grades[2]) / 3;
+
+        System.out.println("Student ID: " + getStudentID)
+    }
 }
 
 public void print_invalid_emails(){
+    for(Student student : classRosterList){
+        String email = student.getEmail();
 
+        if(!email.contains("@") || !email.contains(".") || email.contains(" ")){
+            System.out.println(email);
+        }
+    }
 }
